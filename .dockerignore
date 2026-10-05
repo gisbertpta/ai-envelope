@@ -1,0 +1,6 @@
+# Safety net: the devcontainer build context is the workspace root, which holds
+# the working repos and their secrets. The project layer's
+# Dockerfile.dockerignore (next to its Dockerfile) takes precedence and
+# allowlists what the build needs. If it is ever not picked up, this file
+# makes the build fail loudly instead of sending the whole workspace.
+*

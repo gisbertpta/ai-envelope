@@ -1,0 +1,10 @@
+# Generic domains the sandbox may reach (squid dstdomain syntax: leading dot = incl. subdomains).
+# Agent domains live in modules/<name>/allowlist.txt, project domains in the
+# project layer's allowlist.txt.
+# Keep this short. After changes: .devcontainer/compose.sh restart proxy
+
+# VS Code server + extensions (gitlens) installed inside the container
+update.code.visualstudio.com
+.vscode-cdn.net
+marketplace.visualstudio.com
+.gallerycdn.vsassets.io
